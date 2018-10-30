@@ -12,17 +12,17 @@ public class Tarefa {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id;
 	
-	String descricao;
+	private String descricao;
 	
-	int tempoPomodoro;
+	private int tempoPomodoro;
 	
-	int tempoPausaMenor;
+	private int tempoPausaMenor;
 	
-	int tempoPausaMaior;
+	private int tempoPausaMaior;
 	
-	int quantidadePomodoro;
+	private int quantidadePomodoro;
 
-	boolean status;
+	private boolean status;
 	
 	public Tarefa (long id, String descricao, int tempoPomodoro, int tempoPausaMenor, int tempoPausaMaior, int quantidadePomodoro, boolean status) {
 		this.setId(id);
