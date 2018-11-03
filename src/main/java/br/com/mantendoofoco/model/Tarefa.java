@@ -24,8 +24,8 @@ public class Tarefa {
 
 	private boolean status;
 	
-	public Tarefa (long id, String descricao, int tempoPomodoro, int tempoPausaMenor, int tempoPausaMaior, int quantidadePomodoro, boolean status) {
-		this.setId(id);
+	public Tarefa ( String descricao, int tempoPomodoro, int tempoPausaMenor, int tempoPausaMaior, int quantidadePomodoro, boolean status) {
+		
 		this.setDescricao(descricao);
 		this.setTempoPomodoro(tempoPomodoro);
 		this.setTempoPausaMenor(tempoPausaMenor);
@@ -34,9 +34,7 @@ public class Tarefa {
 		this.setStatus(status);
 	}
 	
-	public void setId(long id) {
-		this.id = id;
-	}
+	public Tarefa() {};
 
 	public String getDescricao() {
 		return descricao;
@@ -78,7 +76,7 @@ public class Tarefa {
 		this.quantidadePomodoro = quantidadePomodoro;
 	}
 
-	public boolean isStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
