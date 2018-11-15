@@ -16,9 +16,9 @@ public class DataConfiguration {
 	public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/mantendo-o-foco");
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
+        dataSource.setUrl("jdbc:mysql://us-cdbr-iron-east-01.cleardb.net:3306/heroku_0bfd010abe48434");
+        dataSource.setUsername("b3d900973edf84");
+        dataSource.setPassword("1e258d22");
         return dataSource;
     }
 
